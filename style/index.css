@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*chat on the left)*/
+    --paleViolet: hsl(276, 100%, 81%);
+    /*chat on the right*/
+    --moderateViolet: hsl(276, 55%, 52%);
+    /*placehonder*/
+    --grayishBlue: hsl(206, 6%, 79%);
+    /*main heading*/
+    --desaturatedViolet:  hsl(271, 36%, 24%);
+    /*paragraph*/
+    --grayishViolet:  hsl(270, 7%, 64%);
+}
+
+.body{
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    background: hsl(270, 20%, 96%);
+    color: white;
+}
+
+.containerPhone{
+    display: flex;
+    width: 100%;
+    height: 654px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.phone-header{
+    background: rgb(136,56,255);
+    background: linear-gradient(90deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
+    border-radius: 30px 30px 5px 5px;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    z-index: -1 
+}
+
+.phone{
+    border: solid 10px white;
+    border-radius: 40px;
+    width: 250px;
+    height: 567px;
+    box-shadow: 9px 19px 20px 0px #dad4d4;
+}
+
+.phone-header_float{
+    float: left;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 0 0 15px 15px;
+    border: solid 9px white;
+    clear: both;
+}
+
+.phone-header{
+    padding: 30px 15px 13px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-header-userphoto{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin: 0 10px;
+}
+
+.phone-header-usename{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.phone-header-state{
+    font-weight: 400;
+    opacity: 50%;
+    font-size: x-small;
+}
+
+.fa-ellipsis-v{
+    padding-left: 60px;
+    font-size: 9px;
+}
+
+.phone-message{
+    padding: 13px 10px;
+    position: relative;
+    top: -22px;
+    font-size: 9px;
+    background: hsl(270, 20%, 96%);
+    border-radius: 0 0 30px 30px;
+}
+
+.phone-message_1{
+    color: var(--moderateViolet);
+    background: hsl(270, 9%, 91%);
+    border-radius: 10px 10px 10px 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 67%;
+    line-height: 12px;
+}
+
+.phone-message_time{
+    background: rgb(136,56,255);
+    background: linear-gradient(240deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 85%;
+}
+
+.phone-message_timefirts{
+    display: flex;
+    align-items: center;    
+}
+
+.phone-message_price{
+    font-size: 13px;
+    font-weight:bold;
+    margin-right: 10px;
+}
+
+.fa-circle{
+    font-size: 14px;
+    opacity: 50%;
+    margin-right: 10px;
+}
+
+.phone-message_image{
+    margin: 17px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35%;
+}
+
+.phone-message_image > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.phone-message_2{
+    color: hsl(271, 15%, 43%);
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 5px 10px ;
+
+}
+
+.phone-message_2_1{
+    margin-left: 39%;
+}
+
+.phone-message_2_2{
+    margin-left: 56%;
+    margin-bottom: 20px;
+}
+
+.phone-send{
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-sendcontainer{
+    padding: 7px;
+    background: var(--desaturatedViolet);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-send_label{
+    padding-left: 15px;
+    font-size: 11px;
+    color: var(--grayishBlue);
+}
+
+.bi-chevron-right{
+    font-weight: 900;
+}
+
+.text_title{
+    color: var(--desaturatedViolet);
+    text-align: center;
+    font-size: 32px;
+}
+
+.text_p{
+    color: var(--grayishViolet);
+    padding: 0 6%;
+    text-align: center;
+    line-height: 28px;
+}
+
+.Phone-backgroung{
+    width: 500px;
+    background: rgb(179, 56, 228);
+    height: 652px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-radius: 0 0 400px 400px;
+    z-index: -2;
+}
+
+.text_p{
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 738px) {
+    .body{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .Phone-backgroung{
+        right: 66%;
+        z-index: -2;
+    }
+    .containerText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerText > p, h2{
+        text-align: left;
+    }
+
+    .text_title{
+        padding: 0 0 3% 0;
+        text-align: start;    
+    }
+
+    .phone{
+        margin-left: 24%;
+    }
+
+    .text_p{
+        padding: 0 35% 0 0;
+    }
+
+    .containerPhone{
+        width: 200%;
+    }
+
+    .Phone-backgroung{
+        width: 555px;
+    }
+}
